@@ -1,0 +1,27 @@
+section p {
+    color: rgb(4, 88, 77);
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul.unordered-list > li {
+    font-weight: bold;
+}
+
+article.highlite + article {
+    background-color: lightcoral;
+}
+
+h2 ~ p {
+    color: blue;
+}
+
+li.special + li > a {
+    color: green;
+}
+
+div li:nth-child(2){
+    color: lightcoral;
+}

@@ -1,0 +1,26 @@
+nav {
+    color: blue;
+    border: 4px double navy;
+}
+
+nav a {
+    font-style: italic;
+}
+
+section.navigation li:first-child{
+    font-weight: bold;
+
+}
+
+div > section#services-list > p {
+    background-color:aqua;
+}
+
+section + header {
+    font-style:bold
+;
+}
+
+section.navigation ~ article {
+    background-color: antiquewhite;
+}
