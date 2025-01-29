@@ -1,0 +1,30 @@
+body::before {
+    padding: 1em 1.5em;
+    border-radius: 0.3em;
+    background: #369;
+    color: #fff;
+}
+
+@media (width: 800px) {
+    body::before {
+    display: block;
+    content: 'The viewport width is exactly 800px';
+    background-color: lightblue;
+    }
+} 
+
+@media (min-width: 800px) {
+    body::before {
+    display: block;
+    content: 'The viewport width is larger than 800px';
+    background-color: lightcoral;
+    }
+}   
+
+@media (max-width: 800px) {
+    body::before {
+    display: block;
+    content: 'The viewport width is smaller than 800px';
+    background-color: lightseagreen;
+    }
+}  

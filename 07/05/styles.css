@@ -1,0 +1,22 @@
+body::before {
+    padding: 1em 1.5em;
+    border-radius: 0.3em;
+    background: #369;
+    color: #fff;
+}
+
+@media (hover: none) {
+    body::before {
+    display: block;
+    content: 'The device does NOT support hover';
+    background-color:lightblue ;
+    }
+}  
+
+@media (hover: hover) {
+    body::before {
+    display: block;
+    content: 'The device does support hover';
+    background-color: lightcoral;
+    }
+} 
