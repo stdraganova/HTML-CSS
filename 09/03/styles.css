@@ -1,0 +1,23 @@
+@import url(../styles/styles.css);
+
+body {
+    padding: 2em;
+}
+
+p {
+    margin-bottom: 2em;
+}
+
+pre {
+    padding: 1.5em 1.5em 0 1.5em;
+    background: lightgray;
+    margin-bottom: 2em;
+    border-radius: 0.3em;
+    border: 1px solid #bbb;
+}
+
+form {
+    display: flex;
+    gap: 1em;
+    align-items: flex-start;
+}

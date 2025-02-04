@@ -1,0 +1,26 @@
+@import url(../styles/styles.css);
+
+body {
+    padding: 2em;
+}
+
+h1 + p,
+h2 + p {
+    margin-bottom: 2em;
+}
+
+h2 {
+    margin-top: 2em;
+}
+
+pre {
+    background: lightgray;
+    border-radius: 0.3em;
+    border: 1px solid #bbb;
+    margin-bottom: 2em;
+    padding-top: 1.5em;
+}
+
+label {
+    padding-right: 0.5em;
+}

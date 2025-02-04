@@ -1,0 +1,29 @@
+@import url(..//styles/styles.css);
+
+body {
+    padding: 2em;
+}
+
+p {
+    margin-bottom: 2em;
+}
+
+pre {
+    background: lightgray;
+    padding: 2em 2em 0 2em;
+    margin-bottom: 2em;
+    border-radius: 0.3em;
+    border: 1px solid #bbb;
+}
+
+fieldset {
+    padding: 2em;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+button {
+    margin-top: 1em;
+}

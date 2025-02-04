@@ -1,0 +1,23 @@
+@import url(..//styles/styles.css);
+
+body {
+    padding: 2em;
+}
+
+p {
+    margin-bottom: 2em;
+}
+
+pre {
+    background: lightgray;
+    padding: 2em 2em 0 2em;
+    margin-bottom: 2em;
+    border-radius: 0.3em;
+    border: 1px solid #bbb;
+}
+
+fieldset {
+   padding-top: 1.5em;
+   padding-left: 1em;
+   border: none;
+}
