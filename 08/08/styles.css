@@ -1,0 +1,35 @@
+@import url(../styles/_styles.css);
+
+h2 {
+    font-size: 1.5rem;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    counter-reset: number 0;
+}
+
+ul li {
+    list-style: none;
+    background: white;
+    padding: 1em;
+    border-radius: 0.3em;
+    box-shadow: -0.2em 0.2em 0 0 #ccc;
+    padding-right: 5sem;
+    position: relative;
+    counter-increment: number;
+}
+
+ul li::before {
+    content: counter(number, decimal);
+    background: orange;
+    border-radius: 0.3em;
+    box-shadow: -0.2em 0.2em 0 0 #ccc;
+    padding: 0.5em 1em;
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: 0;
+    right: 0;
+}

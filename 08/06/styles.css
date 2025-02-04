@@ -1,0 +1,79 @@
+@import url(reset.css);
+
+body {
+    display: flex;
+    background-color: lightgray;
+    gap: 1em;
+    padding: 2em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.flex {
+    background-color: white;
+    border-radius: 0.2em;
+    padding: 1em;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+p {
+    margin: 1em 1em;
+}
+
+p:first-of-type {
+    color: gray;
+    font-size: 0.8em;
+}
+
+p + p {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+iframe {
+    background-color: green;
+    border-radius: 50%;
+    width: 6em;
+    height: 6em;
+    margin: 1em;
+    border: 4px solid white;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.5);
+}
+
+.aside > iframe {
+    margin-left: -2px;
+}
+
+i {
+  font-size: 2em;
+}
+
+@media (max-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aside {
+        display: flex;
+        flex-direction: row;
+    }
+
+}

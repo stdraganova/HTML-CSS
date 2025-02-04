@@ -1,0 +1,213 @@
+@import url(../styles/_styles.css);
+
+.site {
+    padding: 2em;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card {
+    background:  #e9e7e7;
+}
+
+
+.lecture-info {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: -5px;
+    margin-right: -11px;
+}
+
+.lecture {
+    padding: 0.5em;
+    padding-right: 3.5em;
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em rgb(0, 0, 0, 0.1);
+    margin-bottom: -0.5em;
+}
+
+h3 {
+    font-size: 0.7em;
+}
+
+.header {
+    margin-top: -8em;
+}
+
+.lecture-info img {
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow:  0 0 1em rgb(0, 0, 0, 0.1) ;
+    margin-left: -2.5em;
+    width: 50px;
+}
+
+.header-container {
+    background: white;
+    padding: 1em;
+    border-radius: 0.3em;
+    box-shadow:  0 0 1em rgb(0, 0, 0, 0.1) ;
+    margin: 0 auto;
+    width: 97%;
+}
+
+.header-container h2,
+.header-container p {
+    line-height: 1.5;
+}
+
+.header-container h2 {
+    font-size: 1.2em;
+    padding-bottom: 0.3em;
+}
+
+.header-container p {
+    font-size: 0.8em;
+    padding-top: 0.3em;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.first-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-row p {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.first-row a {
+    text-decoration: none;
+    font-weight: bold;
+    color: lightseagreen;
+    font-size: 0.9em;
+}
+
+.second-row {
+    background-color: #f6f4f4;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    padding: 0.5em 1em;
+    border-radius: 0.3em;
+    border: 1px solid lightgrey;
+}
+
+.second-row .price {
+    align-self: flex-end;
+    font-weight: bold;
+}
+
+.begins {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.ends {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.date-time {
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.footer {
+    padding: 1em;
+    background: white;
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+    border-radius: 0.3em;
+}
+
+.footer div {
+    display: flex;
+    gap: 0.5em;
+}
+
+.footer div i {
+    padding-top: 0.2em;
+}
+
+.footer div i,
+.footer div p {
+    font-size: 1.2em;
+}
+
+.footer > p {
+    font-size: 0.9em;
+    padding-top: 0.3em;
+}
+
+.footer div i,
+.footer div p,
+.footer p {
+    color:  lightseagreen;
+    font-weight: bold;
+}
+
+.card {
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border-radius: 0.3em;
+    box-shadow:  0 0 1em rgb(0, 0, 0, 0.1) ;
+    position: relative;
+}
+.card > img {
+    border-radius: 0.3em;
+    box-shadow:  0 0 1em rgb(0, 0, 0, 0.1) ;
+}
+
+.card:first-child::before {
+    content: 'Онлайн Курс (На живо)';
+    background: rgb(32, 178, 170, 0.8);
+    color: white;
+    border-radius: 0.3em;
+    position: absolute;
+    top: 1.5em;
+    right: 1.5em;
+
+}
+.card:nth-child(2)::before {
+    content: 'Видео Курс';
+    background: rgba(168, 32, 178, 0.8);
+    color: white;
+    border-radius: 0.3em;
+    position: absolute;
+    top: 1.5em;
+    right: 1.5em;
+
+}
+.card:nth-child(3)::before {
+    content: 'Работилница';
+    background: rgba(178, 110, 32, 0.8);
+    color: white;
+    border-radius: 0.3em;
+    position: absolute;
+    top: 1.5em;
+    right: 1.5em;
+
+}
+
+@media (max-width: 800px) {
+    .site {
+        flex-direction: column;
+    }
+}

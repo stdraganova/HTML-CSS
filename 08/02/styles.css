@@ -1,0 +1,65 @@
+@import url(../styles/_styles.css);
+
+.site {
+    background: white;
+    overflow: hidden;
+    border-radius: 0.2em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+}
+
+header {
+    display: block;
+}
+
+ul li, ul li a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.special {
+    background-color: #544;
+    padding: 1em;
+}
+
+.special > p, 
+.special li a {
+    color: #eee;
+}
+
+.navigation.special ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.special ul li {
+    flex: 1 1 auto;
+}
+
+h1 {
+    color: green;
+    padding: 1rem;
+}
+
+section {
+    display: flex;
+    gap: 2em;
+    padding: 1em;
+    margin: auto 0;
+}
+
+footer {
+    margin: 1.5em 0;
+}
+
+@media (max-width: 600px) {
+    section {
+        flex-direction: column;
+    }
+
+    .navigation.special ul,
+    .special p {
+        display: block;
+        text-align: center;
+    }
+}

@@ -1,0 +1,59 @@
+html {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Lato", sans-serif;
+    padding: 10px 10px;
+}
+
+p, ul, ol {
+    padding-bottom: 1.5rem;
+}
+
+ul, ol {
+    padding-left: 1.5rem;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-family: inherit;
+}
+
+table {
+    width: 100%;
+    border-collapse:collapse;
+    border: 2px solid rgb(175, 173, 173);
+    margin-bottom: 20px;
+}
+
+td {
+    border: 2px solid rgb(175, 173, 173);
+}
+
+th {
+    background-color: gray;
+    text-align: left;
+    
+}
+
+tr:nth-of-type(even) {
+    background-color: rgb(199, 192, 192);
+}
+tr:nth-of-type(odd) {
+    background-color: rgb(227, 220, 220);
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 5px solid rgba(128, 128, 128, 0.271);
+    padding: 10px 10px 10px 30px ;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+p#author {
+    text-align: right;
+    margin: 5px;
+    padding-bottom: 0px;
+}

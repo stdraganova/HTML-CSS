@@ -1,0 +1,42 @@
+@import url(../styles/_styles.css);
+
+h1 {
+    font-weight: normal;
+}
+
+.site {
+    margin: 2em;
+    margin-bottom: 5em;
+    padding: 2em;
+    background: white;
+    border-radius: 0.3em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.flex-containner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5em;
+}
+
+main{
+    flex: 1 1 550px;
+}
+
+aside {
+    flex: 1 1 auto;
+}
+
+header , main, aside, footer {
+    padding: 1em 1.5em;
+    border: 0.1em solid grey;
+    border-radius: 0.2em;
+}
+
+.two {
+    flex-direction: row-reverse;
+}
+

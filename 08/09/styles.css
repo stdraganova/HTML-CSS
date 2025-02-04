@@ -1,0 +1,89 @@
+@import url(../styles/_styles.css);
+
+.site .timeline h2 {
+    background: white;
+    padding: 1rem;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+}
+
+article > section {
+    width: 100%;
+    background: white;
+    padding: 1rem;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+}
+
+h3, p {
+    font-size: 1em;
+}
+
+.site {
+    padding: 1em;
+}
+
+.timeline {
+    padding: 2em;
+    padding-bottom: 0;
+    border: 2px solid lightgray;
+    border-radius: 0.3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+article {
+    padding: 3em;
+    width: 50.1% ;
+    height: auto;
+    /* flex: 1 1 auto; */
+}
+
+article:nth-of-type(even) {
+    align-self: flex-start;
+    border-right: 2px solid lightgray;
+    padding-left: 0;
+    position: relative;
+}
+
+article:nth-of-type(odd) {
+    align-self: flex-end;
+    border-left: 2px solid lightgray;
+    padding-right: 0;
+    position: relative;
+}
+
+article:nth-of-type(even)::before {
+    padding: 1em 1.5em;
+    content: ' ';
+    background-color: green;
+    border: 2px solid white;
+    border-radius: 50em;
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: auto;
+    right: -1.8em;
+    top: 5em;
+}
+
+article:nth-of-type(odd)::before {
+    padding: 1em 1.5em;
+    content: ' ';
+    background-color: orange;
+    border: 2px solid white;
+    border-radius: 50em;
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: auto;
+    left: -1.8em;
+    top: auto;
+}
+
+@media (min-width) {
+    article {
+        width: 50.05% ;
+    }
+}

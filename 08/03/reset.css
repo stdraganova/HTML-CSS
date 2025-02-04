@@ -1,0 +1,9 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    padding: opx;
+    margin: 0px;
+    box-sizing: inherit;
+}
