@@ -1,0 +1,75 @@
+@import url(../styles/styles.css);
+
+body {
+    background: lightgray;
+    padding: 2em;
+}
+
+.login-form {
+    background: white;
+    margin: 0 auto;
+    padding: 2em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.3);
+    max-width: 50ch;
+    width: 100dvw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    padding: 0 0 1em 0;
+    border-bottom:1px solid gray ;
+    margin-bottom: 1em;
+    width: 4ch;
+}
+
+label {
+    padding-bottom: 0.5em;
+    font-weight: bold;
+    position: relative;
+}
+
+input {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+}
+
+span {
+    margin-bottom: 1em;
+    font-size: 0.8em;
+}
+
+button {
+    background: orange;
+    color: white;
+    border-radius: 0.3em;
+    border: none;
+    padding: 0.5em 1em;
+    margin: 1em 0;
+}
+
+label::after {
+    content: '*';
+    color: red;
+    padding-left: 0.2em;
+}
+
+input:focus {
+    border:2px solid orange;
+    outline: none;
+}
+
+input:user-invalid {
+    border-color: red;
+    outline: none;
+}
+
+.icon {
+     position: absolute;
+     top: 0em;
+     right:0em;
+}

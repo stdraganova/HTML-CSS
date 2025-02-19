@@ -1,0 +1,45 @@
+@import url(../styles/styles.css);
+
+body {
+    background: lightgrey;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+form {
+    background-color: white;
+    padding: 1em;
+    border-radius: 0.2em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.3);
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+input, button {
+    padding: 0.5em 1em;
+    background-color: lightgray;
+    border: none;
+    border-radius: 0.2em;
+}
+
+input:first-child,
+button {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 10ch;
+}
+
+input:nth-child(2) {
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 20ch;
+}
+
+button {
+   background-color: orange;
+   color: white;
+}

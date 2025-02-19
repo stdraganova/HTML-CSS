@@ -1,0 +1,84 @@
+@import url(../styles/styles.css);
+
+body {
+    padding: 2em;
+}
+
+fieldset {
+    padding: 1em;
+    border: none;
+}
+
+.radio div:not(:last-child){
+    padding-bottom: 1em;
+}
+
+fieldset:first-of-type {
+    margin-bottom: 2em;
+}
+
+fieldset > legend {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.radio input{
+    display: none;
+}
+
+.radio label::before {
+    display: inline-block;
+    content: ' ';
+    width: 1em;
+    height: 1em;
+    aspect-ratio: 1/1;
+    background-color: orange;
+    border: 2px solid orange;
+    margin-right: 0.3em;
+    border-radius: 0.5em;
+}
+
+.radio input:checked + label::before {
+    background-color: white;
+    transition: background-color 0.5ms ease-in;
+}
+
+.checkbox input {
+    display: none;
+}
+
+.checkbox label{
+    position: relative;
+}
+
+.checkbox label::before {
+    content: ' ';
+    width: 2em;
+    height: 1em;
+    background-color: orange;
+    display: inline-block;
+    border-radius: 0.5em;
+    margin-right: 0.5em;
+}
+
+.checkbox input:checked + label::before {
+    background-color: green;
+}
+
+.checkbox label::after {
+    content: ' ';
+    width: 0.8em;
+    height: 0.8em;
+    background-color: white;
+    display: inline-block;
+    border-radius: 0.5em;
+    position: absolute;
+    left: 0.15em;
+    top: 0.08em;
+    transition: left 0.5ms ease-in;
+}
+
+.checkbox input:checked + label::after{
+    position: absolute;
+    left: 1.1em;
+}

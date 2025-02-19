@@ -1,0 +1,32 @@
+@import url(../styles/styles.css);
+
+body {
+    padding: 2em;
+    border: 2px solid green;
+}
+
+.site {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+}
+
+.site main {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+h2 {
+    font-size: 1em;
+    padding-bottom: 1em;
+}
+
+p {
+    font-size: 0.8em;
+}
+
+.container {
+    border: 2px solid blue;
+}

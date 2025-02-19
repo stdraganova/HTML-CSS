@@ -1,0 +1,81 @@
+@import url(../styles/styles.css);
+
+body {
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+}
+
+.container {
+    background: white;
+    padding: 2em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.3);
+    /* max-width: 60ch; */
+}
+
+h2 {
+    padding-bottom: 2em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    font-size: 0.8em;
+    color: #666;
+}
+
+button {
+    border: none;
+    padding:0.5em  1em;
+    border-radius: 0.3em;
+    font-weight: bold;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+input::placeholder{
+    color: white;
+}
+
+input:focus {
+    border-color: orange;
+    outline: none;
+}
+
+button:hover {
+    background: orange;
+    color: white;
+}
+
+form > div.meta{
+    position: relative;
+}
+
+div.meta label {
+    position: absolute;
+    z-index: 10;
+}
+
+div.meta  input:focus + label{
+    top: -1.5em;
+    color: orange;
+}
+
+div.message label {
+    order: -10;
+}
